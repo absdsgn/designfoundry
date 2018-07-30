@@ -1,0 +1,105 @@
+html, body  {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 16px
+}
+
+@font-face {
+    font-family: DA;
+    src: url(fonts/damnarc.woff);
+}
+
+h2  {
+  font-family: DA;
+  color: #262626;
+  font-size: 2rem;
+  margin: 0;
+  padding-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.bg  {
+  background-image: url('img/bg.jpeg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat : no-repeat;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: fixed;
+  z-index: -1;
+}
+
+.bg:after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  background: #000000;
+  opacity: .45;
+}
+
+.name {
+  position: fixed;
+  z-index: 999;
+  top: 2rem;
+  left: 2rem;
+  background-image: url('img/name.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 300px;
+  width: 300px;
+}
+
+.content-wrapper  {
+  width: 100%;
+  padding: 0 0 0 370px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.content  {
+  margin: 0 auto;
+  padding: 2rem 0;
+  background: #fff;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.intro  {
+
+}
+
+.skillz-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skillz-item  {
+  width: 32%;
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.skillz-item img  {
+  padding: 2rem;
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
