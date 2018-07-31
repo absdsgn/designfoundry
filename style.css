@@ -341,15 +341,15 @@ p  {
   }
 
   .skillz-item-content h2 {
-    font-size: 3rem;
+    font-size: 4.5rem;
     padding: 0;
     margin: 0;
     padding-top: 0;
   }
 
   .skillz-item-content  p {
-    font-size: 1.75rem;
-    line-height: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
   }
 
   .skillz-item:hover > .skillz-item-wrapper img {
