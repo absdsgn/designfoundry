@@ -249,12 +249,16 @@ p  {
   .intro-wrapper  {
     position: absolute;
     z-index: 1000;
-    top: 0;
+    top: 9rem;
     right: 0;
     left: auto;
-    width: 85%;
+    bottom: auto;
+    width: 80%;
     height: auto;
+    padding: 2rem;
+    box-sizing: border-box;
     background: #fff;
+    z-index: 10;
   }
 
   .intro  {
@@ -263,14 +267,17 @@ p  {
     padding: 3rem 2rem;
     margin: 0 auto;
     text-align: left;
+    flex-direction: column;
   }
 
   .intro  h2, .intro  p {
     color: #212121;
-    line-height: 1.25rem;
+    line-height: 2.5rem;
+    font-size: 1.75rem;
   }
 
   .intro  h2  {
+    font-size: 3rem;
     padding-bottom: 1rem;
   }
 
@@ -280,10 +287,13 @@ p  {
 
   .content-wrapper  {
     width: 100%;
-    padding: 0 0 0 370px;
+    padding: 0;
     /* max-width: 1200px; */
     margin: 0 auto;
     box-sizing: border-box;
+    padding-top: 105%;
+    position: relative;
+    z-index: 999;
   }
 
   .content  {
@@ -294,10 +304,6 @@ p  {
     box-sizing: border-box;
   }
 
-  .intro  {
-
-  }
-
   .skillz-wrapper {
     display: flex;
     flex-direction: row;
@@ -306,58 +312,48 @@ p  {
   }
 
   .skillz-item  {
-    /* width: 32%; */
-    margin: 0;
-    /* padding: 2rem; */
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    width: 50%;
+    width: 100%;
   }
 
   .skillz-item-wrapper {
-    /* background: #a7c7b6; */
-    width: 100%;
-    height: 25vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: all .2s ease-in-out;
+    flex-direction: column;
+    height: auto;
   }
 
   .skillz-item-wrapper img  {
-    padding: 2rem;
-    max-width: 50%;
-    max-height: 75px;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-    opacity: 1;
-    transition: all .2s ease-in-out;
+    padding: 0;
+    padding-top: 4rem;
+    max-width: none;
+    max-height: none;
+    height: 130px;
   }
 
   .skillz-item-content {
-    position: absolute;
-    width: 100%;
-    padding: .25rem 2rem;
+    position: relative;
     box-sizing: border-box;
-    height: 100%;
-    top: 50%;
-    left: 0;
-    transform: translate(0,-50%);
-    opacity: 0;
-    transition: all .2s ease-in-out;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 80%;
+    opacity: 1;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    transform: none;
+    text-align: center;
+  }
+
+  .skillz-item-content h2 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .skillz-item-content  p {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
   }
 
   .skillz-item:hover > .skillz-item-wrapper img {
-    opacity: 0;
+    opacity: 1;
     /* transform: rotateY(180deg); */
   }
 
